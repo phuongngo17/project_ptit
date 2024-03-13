@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+    .hidden {
+    display: none;
+}
+
+</style>
+<body>
+    <div class="icon">
+    <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+    <i class="fa-solid fa-cart-shopping" id="cartIcon"></i> 
+    <i class="fa-solid fa-user" id="userIcon"></i> 
+</div>
+<div id="searchBar" class="hidden">
+    <!-- Thanh tìm kiếm -->
+    Tìm kiếm...
+</div>
+<div id="cart" class="hidden">
+    <!-- Giỏ hàng -->
+    Giỏ hàng...
+</div>
+<div id="userPanel" class="hidden">
+    <!-- Đăng ký/Đăng nhập -->
+    Đăng ký/Đăng nhập...
+</div>
+ <script>
+    // Lấy các biểu tượng và thanh tìm kiếm, giỏ hàng, và panel người dùng
+const searchIcon = document.getElementById("searchIcon");
+const cartIcon = document.getElementById("cartIcon");
+const userIcon = document.getElementById("userIcon");
+const searchBar = document.getElementById("searchBar");
+const cart = document.getElementById("cart");
+const userPanel = document.getElementById("userPanel");
+
+// Hiển thị thanh tìm kiếm khi di chuột qua biểu tượng tìm kiếm
+searchIcon.addEventListener("mouseenter", function() {
+    searchBar.classList.remove("hidden");
+});
+
+// Ẩn thanh tìm kiếm khi di chuột ra khỏi biểu tượng tìm kiếm
+searchIcon.addEventListener("mouseleave", function() {
+    searchBar.classList.add("hidden");
+});
+
+// Hiển thị giỏ hàng khi di chuột qua biểu tượng giỏ hàng
+cartIcon.addEventListener("mouseenter", function() {
+    cart.classList.remove("hidden");
+});
+
+// Ẩn giỏ hàng khi di chuột ra khỏi biểu tượng giỏ hàng
+cartIcon.addEventListener("mouseleave", function() {
+    cart.classList.add("hidden");
+});
+
+// Hiển thị panel người dùng khi di chuột qua biểu tượng người dùng
+userIcon.addEventListener("mouseenter", function() {
+    userPanel.classList.remove("hidden");
+});
+
+// Ẩn panel người dùng khi di chuột ra khỏi biểu tượng người dùng
+userIcon.addEventListener("mouseleave", function() {
+    userPanel.classList.add("hidden");
+});
+
+ </script>
+</body>
+</html>

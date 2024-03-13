@@ -1,0 +1,43 @@
+ * {
+    font-family: "Times New Roman", Times, serif;
+    padding: 0;
+    margin: 0;
+ }
+
+ form {
+    margin-top: 130px;
+ }
+
+ h2,
+ div {
+    text-align: center;
+    margin-bottom: 20px;
+ }
+
+ .checkbox {
+    position: relative;
+    left: -35px;
+ }
+
+ button {
+    background-color: rgba(0, 0, 255, 0.719);
+    color: white;
+    border-radius: 5px;
+ }
+
+ a {
+    font-size: 14px;
+    position: relative;
+    left: 70px;
+    color: rgba(0, 0, 255, 0.553);
+ }
+
+ img {
+    margin-bottom: 20px;
+    position: relative;
+    left: 740px;
+ }
+
+ .name > input {
+    width: 330px;
+ }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="../style/signup.css">
+  </head>
+  <body>
+    <form action="">
+      <img src="/session05/img/z5206899745471_97cbbc000e5e93541b524e927adac364.jpg" alt="">
+      <h2>Register</h2>
+      <div class="name">
+        <input style="height: 35px" type="text" placeholder="First Name*" id="firstname"/>
+        <div id="firstnameError" class="form-text text-danger">1</div>
+        <input style="height: 35px" type="text" placeholder="Last Name*" id="lastname"/>
+        <div id="lastnameError" class="form-text text-danger"></div>
+      </div>
+      <div class="email">
+        <input id="email"style="width: 330px; height: 35px"  type="email" placeholder="Email Address*"
+        />
+        <div id="emailError" class="form-text text-danger"></div>
+      </div>
+      <div class="password">
+        <input id="password"  style="width: 330px; height: 35px"  type="password"placeholder="Password*"/>
+        <div id="passwordError" class="form-text text-danger"></div>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" />
+        <h>I want to receive inspiration,marketing <br />
+          promotions and updates via email.</h>
+      </div>
+      <div class="sign_up">
+        <button style="width: 330px; height: 35px" onclick="handleLogin()">SIGN UP</button>
+      </div>
+      <div>
+        <a href="">Already have an account? Sign In </a>
+        
+      </div>
+    </form>
+    <script src="../js/signup.js"></script>
+  </body>
+</html>
